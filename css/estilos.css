@@ -107,10 +107,12 @@ body{
 	width: 100%;
 	position: relative;
 	height: 600px;
-	background: red;
 	overflow-y:scroll; 
 }
 
+#info::-webkit-scrollbar { width: 0 !important }
+#info { -ms-overflow-style: none; }
+#info { overflow: -moz-scrollbars-none; }
 
 .wrapper{
 	width: 1000px;
@@ -130,6 +132,7 @@ body{
 	padding: 0 ! important;
 	background: #1c1c1c !important;
 }
+
 
 /* ++++++++++++ BRANDING ++++++++++++ */
 .branding_proyecto{
@@ -301,7 +304,7 @@ body{
 }
 
 .datos{
-	width: 200px !important;
+	width: 400px !important;
 	height: 40px !important;
 	background: #1c1c1c !important;
 	display: inline-block !important;
